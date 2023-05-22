@@ -1,0 +1,89 @@
+* {
+  cursor: url(https://cur.cursors-4u.net/games/gam-12/gam1191.cur), auto !important;
+}
+
+body{
+  padding-top: 86px;
+}
+
+.login-text {
+  color: white;
+}
+
+.nav-bar{
+  position: fixed;
+  top: 0;
+}
+
+.color-nav{
+  background-color: #212529;
+}
+
+.navbar-toggler-icon{
+  color: white;
+}
+
+.main-section{
+  margin: auto;
+  margin-top: 70px;
+}
+
+.carusel, .img-carusel{
+  width: 100%;
+  height: 280px;
+}
+
+@media (max-width: 768px) {
+  .carusel, .img-carusel {
+    height: 170px;
+  }
+
+  .parrafo{
+    padding: 20px 20px;
+  }
+}
+
+
+@media (max-width: 768px) {
+  .items-nosotros {
+    padding-top: 30px;
+  }
+
+}
+
+.imagenes-porta img{
+  height: 300px;
+  width: 250px;
+}
+
+
+.container-fluid{
+  padding: 0;
+}
+
+.parrafo{
+  padding: 20px 80px;
+}
+
+.card-form{
+  width: 470px;
+}
+
+.form-contacto{
+  padding: 20px;
+}
+
+.form-group{
+  padding-bottom: 10px;
+}
+
+footer{
+  flex-shrink: 0;
+  background-color: black;
+  color: white;
+  height: 60px;
+  padding: 18px;
+}
+
+
+

@@ -1,0 +1,157 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <title>Contacto</title>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css"
+    integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
+  <link rel="shortcut icon" href="imagenes/pokeball.png">
+
+  <link href="css/bootstrap.min.css" rel="stylesheet">
+  <link href="css/estilos.css" rel="stylesheet">
+
+  <script type="text/javascript" src="js/script.js"></script>
+  <script type="text/javascript" src="js/validacion-form-contacto.js"></script>
+</head>
+
+
+<body style="background-image: url(imagenes/fondoo.png)">
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark color-nav fixed-top">
+    <a class="navbar-brand" href="index2.html">
+      <img src="imagenes/logo.png" width="130" height="60" alt="">
+    </a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+      aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item ">
+          <a class="nav-link" href="index2.html">Inicio</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="Nosotros.html">Nosotros</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="Portafolio.html">Poke-tienda</a>
+        </li>
+        <li class="nav-item active">
+          <a class="nav-link" href="Contacto.html">Contacto</a>
+        </li>
+        <li class="nav-item">
+          <a href="Login.html">
+            <button type="button" class="btn btn-warning">Ingreso</button>
+          </a>
+        </li>
+      </ul>
+
+    </div>
+  </nav>
+
+  <br>
+
+  <div class="container-fluid ">
+
+    <div class="row justify-content-center align-items-center">
+      <div class="col-md-6 text-center card-form">
+        <div class="card shadow-sm form-contacto">
+
+          <div>
+            <form id="formularioContacto" onsubmit="return validarFormulario()">
+              <CENTER>
+                <div>
+                  <h1>Dejanos un mensaje!</h1>
+                </div>
+                <br>
+              </CENTER>
+              <div class="form-group">
+                <label>NOMBRES: &nbsp </label>
+                <input type="text" id="nombres" placeholder="Digita tus nombres">
+              </div>
+              <div class="form-group">
+                <label>APELLIDOS: &nbsp </label>
+                <input type="text" id="apellidos" placeholder="Digita tus apellidos">
+              </div>
+              <div class="form-group">
+                <label>TELEFONO: &nbsp </label>
+                <input type="text" id="telefono" placeholder="Digita tu telefono">
+              </div>
+              <div class="form-group">
+                <label>CORREO: &nbsp </label>
+                <input type="text" id="correo" placeholder="Digita tu correo">
+              </div>
+              <div class="form-group">
+                <label>MENSAJE: &nbsp </label>
+                <br>
+                <textarea id="mensaje" rows="5" cols="40">
+              </textarea>
+              </div>
+              <button type="submit" class="btn btn-success">Enviar</button>
+              <button type="reset" class="btn btn-danger">Borrar</button>
+
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <br><br>
+
+  <a href="https://www.cursors-4u.com/cursor/2011/01/24/pikachu-15.html" target="_blank" title="Pikachu"><img
+      src="https://cur.cursors-4u.net/cursor.png" border="0" alt="Pikachu"
+      style="position:absolute; top: 0px; right: 0px;" /></a>
+
+  </div>
+
+  <footer>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12 text-center">
+          <p>Desarrollado por Daniel Corzo - 2023</p>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    window.addEventListener('resize', function () {
+      var textarea = document.getElementById('mensaje');
+      var screenWidth = window.innerWidth;
+
+      // Define los tamaños de pantalla y el número de columnas correspondiente
+      if (screenWidth < 600) {
+        textarea.cols = 35;
+      } else if (screenWidth < 900) {
+        textarea.cols = 40;
+      } else {
+        textarea.cols = 45;
+      }
+    });
+
+    // Ejecuta el evento resize al cargar la página
+    window.dispatchEvent(new Event('resize'));
+  </script>
+
+  <!-- Optional JavaScript -->
+  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+    integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js"
+    integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh"
+    crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js"
+    integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ"
+    crossorigin="anonymous"></script>
+
+
+</body>
+
+</html>
